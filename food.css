@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav{
+  height: 100px;
+  width: 100%;
+  background-color: aqua;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-nav{
+  margin-left: 40px;
+}
+.mid-nav{
+  /* background-color: red; */
+}
+.form-control{
+  width: 280px;
+  height: auto;
+  /* margin-right: 50px; */
+  /* padding-right: 50px; */
+
+}
