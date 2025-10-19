@@ -2,148 +2,160 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodmart</title>
-    <link rel="stylesheet" href="food.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodmart</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="food.css" />
 </head>
 
 <body>
-    <div class="nav">
-        <div class="left-nav">
-            <img src="assets/logo (1).png" alt="Foodmart Logo">
-        </div>
-
-
-        <div class="navbar-center">
-            <div class="search-bar">
-                <i class="fa-solid fa-chevron-down"></i>
-                <input type="text" placeholder="Search more than 20,000 products">
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-            </div>
-        </div>
-
-        <div class="right-nav">
-            <h4>For Support?</h4>
-            <p><b>+91 090909090</b></p>
-        </div>
-
-        <div class="icons">
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-heart"></i>
-        </div>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="left-nav">
+      <img src="assets/logo (1).png" alt="Foodmart Logo" />
     </div>
 
+    <div class="navbar-center">
+      <div class="search-bar" role="search">
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        <input type="text" placeholder="Search more than 20,000 products" aria-label="Search products" />
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="right-nav">
+      <h4>For Support?</h4>
+      <p><b>+91 090909090</b></p>
+    </div>
+
+    <div class="icons">
+      <i class="fa-solid fa-user" title="Account"></i>
+      <i class="fa-solid fa-heart" title="Wishlist"></i>
+    </div>
+  </header>
+
+  <!-- CONTACT / PROMO FORM -->
+  <main>
     <section class="contact-form">
-        <div class="c-form">
-            <div class="c-left">
-                <h1>Get 25% Discount <br> your first <br>purchase</h1>
-                <h5>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Dictumst amet, metus, sit massa posuere
-                    maecenas. At tellus ut nunc amet velegestas.</h5>
+      <div class="c-form">
+        <div class="c-left">
+          <h1>Get 25% Discount <br />your first <br />purchase</h1>
+          <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst amet, metus, sit massa posuere
+            maecenas. At tellus ut nunc amet velegestas.</h5>
+        </div>
+
+        <!-- Real Form -->
+        <div class="c-right">
+          <form>
+            <div class="mb-3 name">
+              <label for="nameInput" class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Name" id="nameInput" />
             </div>
 
-            <!-- Real Form -->
-            <div class="c-right">
-                <form>
-                    <div class="name">
-                        <label for="exampleInputEmail1" class="form-label">Name</label>
-                        <input type="email" class="form-control" placeholder="Name" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
-                    </div>
-                    <div class="email">
-                        <label for="exampleInputPassword1" class="form-label">Email</label>
-                        <input type="password" class="form-control" placeholder="Your valid email"
-                            id="exampleInputPassword1">
-                    </div>
-                    <div class="checkbox" form-check="">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Subscribe to the newsletter</label>
-                    </div>
-                    <button type="submit" class="btn btn-dark">Submit</button>
-                </form>
+            <div class="mb-3 email">
+              <label for="emailInput" class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Your valid email" id="emailInput" />
             </div>
+
+            <div class="form-check checkbox mb-3">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+              <label class="form-check-label" for="exampleCheck1">Subscribe to the newsletter</label>
+            </div>
+
+            <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
         </div>
+      </div>
     </section>
 
+    <!-- BLOG CARDS -->
     <section class="blog">
-        <div class="card" style="width: 25rem;">
-            <img src="assets/post-thumb-1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">0 Different Types of comfortable clothes ideas for women</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim
-                    tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...
-                </p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
+      <div class="card" style="width: 25rem;">
+        <img src="assets/post-thumb-1.jpg" class="card-img-top" alt="post 1" />
+        <div class="card-body">
+          <h5 class="card-title">10 Different Types of comfortable clothes ideas for women</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim
+            tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
         </div>
-        <!-- 2 -->
-        <div class="card" style="width: 25rem;">
-            <img src="assets/post-thumb-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Top 10 casual look ideas to dress up your kids</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
         </div>
-        <!-- 3 -->
-        <div class="card" style="width: 25rem;">
-            <img src="assets/post-thumb-3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Latest trends of wearing street wears supremely</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
+      </div>
+
+      <div class="card" style="width: 25rem;">
+        <img src="assets/post-thumb-2.jpg" class="card-img-top" alt="post 2" />
+        <div class="card-body">
+          <h5 class="card-title">Top 10 casual look ideas to dress up your kids</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim
+            tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
         </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 25rem;">
+        <img src="assets/post-thumb-3.jpg" class="card-img-top" alt="post 3" />
+        <div class="card-body">
+          <h5 class="card-title">Latest trends of wearing street wears supremely</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim
+            tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
     </section>
 
-
+    <!-- PHONE APP PROMO -->
     <section class="phone">
-        <div class="phone-sec">
-            <img src="assets/phone.png" alt="">
-            <div class="text">
-                <h1>Shop faster with foodmart App</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus nonet
-                    psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames semper erat ac in
-                    suspendisse iaculis. Amet blandit tortor praesent ante vitae. A, enim pretiummi senectus magna.
-                    Sagittis sed ptibus liberolectus non et psryroin.</p>
-                <img src="assets/google-play.jpg" alt="">
-                <img src="assets/app-store.jpg" alt="">
-            </div>
+      <div class="phone-sec">
+        <div class="phone-img">
+          <img src="assets/phone.png" alt="Phone preview" />
         </div>
+        <div class="text">
+          <h1>Shop faster with Foodmart App</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus nonet psryroin.
+            Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames semper erat ac in suspendisse iaculis.</p>
+          <div class="store-links">
+            <img src="assets/google-play.jpg" alt="Google Play" />
+            <img src="assets/app-store.jpg" alt="App Store" />
+          </div>
+        </div>
+      </div>
     </section>
 
-
-<section class="buttons">
+    <!-- CATEGORY BUTTONS -->
+    <section class="buttons">
 <button type="button" class="butn">Blue diamon almonds</button>
 <button type="button" class="butn">Angie's Boomchickapop Corn</button>
 <button type="button" class="butn">Salty kettle Corn</button>
@@ -162,18 +174,18 @@
 <button type="button" class="butn">Warrior Blend Organic</button>
 <button type="button" class="butn">Chao Cheese Creamy</button>
 <button type="button" class="butn">Chicken meatballs</button>
-
-</section>
-
-
-
-    <section class="footer">
-        <h6>© 2025 Foodmart. All rights reserved.</h4>
-            <h6>Free HTML Template by Swapnil Distributed by ThemeWagon</h4>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <h6>© 2025 Foodmart. All rights reserved.</h6>
+    <h6>Free HTML Template by Swapnil Distributed by ThemeWagon</h6>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
