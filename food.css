@@ -127,7 +127,12 @@
     margin-left: 50px;
 }
 .footer{
-    background-color: red;
+    background-color: rgb(186, 171, 171);
     height: 100px;
-        width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
