@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../App"; // import ThemeContext from App.jsx
 import logo from "../assets/logo-1.png";
 
-export default function Navbar() {
+function Navbar() {
+  const { theme, toggleTheme } = useContext(ThemeContext); // Correct destructuring
+
   return (
-    <div className="nav">
+    <div className={`nav ${theme}`}>
       <div className="left-nav">
         <img src={logo} alt="Foodmart Logo" />
       </div>
@@ -18,8 +21,28 @@ export default function Navbar() {
 
       <div className="right-nav">
         <h4>For Support?</h4>
-        <p><b>+91 090909090</b></p>
+        <p>
+          <b>+91 090909090</b>
+        </p>
       </div>
+
+      <button
+        onClick={toggleTheme}
+        style={{
+          border: "none",
+          background: "none",
+          fontSize: "24px",
+          cursor: "pointer",
+          marginLeft: "15px",
+          color: theme === "light" ? "white" : "yellow",
+        }}
+      >
+        {theme === "light" ? (
+          <i className="fa-solid fa-toggle-off"></i>
+        ) : (
+          <i className="fa-solid fa-toggle-on"></i>
+        )}
+      </button>
 
       <div className="icons">
         <i className="fa-solid fa-user"></i>
@@ -28,3 +51,5 @@ export default function Navbar() {
     </div>
   );
 }
+
+export default Navbar;

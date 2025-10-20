@@ -242,3 +242,43 @@
         text-align: center;
     }
 }
+/* theme */
+/* === Theme Styles === */
+.app.light {
+  background-color: white;
+  color: black;
+}
+
+.app.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.app.dark .nav {
+  background-color: #222;
+  color: white;
+}
+
+.app.dark .search-bar {
+  background-color: #333;
+  color: white;
+}
+
+.app.dark input {
+  color: white;
+}
+
+.app.dark .blog .card {
+  background-color: #2a2a2a;
+  color: white;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+}
+
+.app.dark .phone-sec {
+  background-color: #333;
+}
+
+.app.dark .footer {
+  background-color: #222;
+  color: white;
+}
